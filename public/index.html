@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <link rel="stylesheet" href="index.css">
+    <title>Starstruck Search</title>
+  </head>
+  <body>
+    <div id="container"></div>
+	 <div class="instructions">
+		<h2>Instructions</h2>
+		<p>We lean heavily on open-source libraries to speed new feature development. The only issue? Github's out-of-the-box search
+			UI won't filter to our rather-specific requirements.</p>
+
+		<p>To make discovering new libraries easy, let's write a small tool that will query the Github search API
+			(<a href="https://developer.github.com/v3/search/#search-repositories" target="_blank">REST</a> or
+			<a href="https://developer.github.com/v4/query/#connections" target="_blank">GraphQL</a>) and return a list of repositories that might match our needs. At a minimum, each result we show should match:
+			<ul>
+				<li>our language (JavaScript)</li>
+				<li>our starry-eyed expectation of at least 127 stars</li>
+			</ul>
+		</div>
+  </body>
+</html>

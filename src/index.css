@@ -1,0 +1,15 @@
+body {
+  background-color: #eee;
+  font-family: "Lato";
+  line-height: 1.4;
+  color: #282823;
+}
+
+.instructions {
+  border-radius: 3px;
+  background-color: #e7e7e7;
+  border-top: 1px solid #ccc;
+  max-width: 600px;
+  padding: 20px;
+}
+
