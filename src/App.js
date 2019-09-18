@@ -31,20 +31,20 @@ class SearchForm extends Component {
     }
 
     renderList = () => {
-      //This will filter out all results in the resultsArray that represent repos with less than 127 stars
+        //This will filter out all results in the resultsArray that represent repos with less than 127 stars
         const list = [...this.state.resultsArray].filter(
             repo => repo.stargazers_count >= 127
         )
         return list.length ? (
-          <ul>
+            <ul>
                 {list.map(repo => (
-                  <li>
+                    <li>
                         <a href={repo.clone_url}>{repo.name}</a>
                     </li>
                 ))}
             </ul>
         ) : (
-          // If the nothing is found to meet all the requirements it will render differently
+            // If the nothing is found to meet all the requirements it will render differently
             <p>No results found :(</p>
         )
     }
